@@ -56,10 +56,10 @@
             </objects>
             <point key="canvasLocation" x="116.79389312977099" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--What ShouldI Eat View Controller-->
         <scene sceneID="LuG-hq-oOd">
             <objects>
-                <viewController id="kWK-HK-UVz" sceneMemberID="viewController">
+                <viewController id="kWK-HK-UVz" customClass="WhatShouldIEatViewController" customModule="caroline" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H1q-bZ-OCQ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
