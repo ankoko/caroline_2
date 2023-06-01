@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LfQ-f3-W2A">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -33,6 +33,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title="What should I eat"/>
                                 <connections>
                                     <action selector="onTappedWhatShouldIEatButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="CKT-GO-ADH"/>
+                                    <segue destination="kWK-HK-UVz" kind="show" id="UBn-3q-qF4"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="caroline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efv-dv-JSE">
@@ -46,6 +47,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="uB2-gG-mUb"/>
                     <connections>
                         <outlet property="CarolineLabel" destination="efv-dv-JSE" id="Msg-CJ-cLJ"/>
                         <outlet property="FoodListButton" destination="uyI-EU-as2" id="ry7-PI-7vF"/>
@@ -54,7 +56,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116.79389312977099" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="1043.5114503816794" y="3.5211267605633805"/>
         </scene>
         <!--What ShouldI Eat View Controller-->
         <scene sceneID="LuG-hq-oOd">
@@ -134,7 +136,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MYN-Y8-SCL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="820.61068702290072" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="1747.3282442748091" y="3.5211267605633805"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="24O-My-0JC">
@@ -163,14 +165,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fO8-Uw-KVM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1546" y="4"/>
+            <point key="canvasLocation" x="2472.5190839694656" y="3.5211267605633805"/>
         </scene>
         <!--Food List Table View Controller-->
         <scene sceneID="qSe-cv-Mkt">
             <objects>
                 <tableViewController id="8V1-rN-Av8" customClass="FoodListTableViewController" customModule="caroline" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="idc-x3-P9w">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -192,7 +194,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L1g-tU-deR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117" y="687"/>
+            <point key="canvasLocation" x="1044" y="755"/>
         </scene>
         <!--Add View Controller-->
         <scene sceneID="P34-hg-un7">
@@ -274,7 +276,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hey-3w-bxO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="820.61068702290072" y="686.61971830985919"/>
+            <point key="canvasLocation" x="1747" y="755"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="c2r-cJ-AFY">
@@ -289,7 +291,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZG9-ZL-QmB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1546" y="687"/>
+            <point key="canvasLocation" x="2473" y="755"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TkM-DI-tYy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LfQ-f3-W2A" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OXN-4i-DEK">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="oNu-fJ-cB3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mkk-9Y-Jd3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116.79389312977099" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>
